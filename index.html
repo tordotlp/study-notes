@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <div id="sidebar">
+            <button id="helpButton">❓ Help</button>
+            <div id="tutorial">
+                <h2>📖 How to Use:</h2>
+                <p>1. Click "Add Tab" to create a subject.</p>
+                <p>2. Rename tabs by double-clicking their name.</p>
+                <p>3. Type or paste your notes in the text area.</p>
+                <p>4. Upload images (they stay inside the note).</p>
+                <p>5. Notes & images are saved per tab!</p>
+                <button id="closeHelp">❌ Close</button>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="tabs">
+                <button id="addTab">➕ Add Tab</button>
+            </div>
+
+            <div id="noteArea">
+                <textarea id="noteInput" placeholder="Write or paste your notes here..."></textarea>
+                <input type="file" id="imageUpload" accept="image/*">
+                <button id="saveNote">💾 Save Note</button>
+                <button id="clearNotes">🗑 Clear Notes</button>
+            </div>
+
+            <div id="notes"></div>
+        </div>
+    </div>
+</body>
+</html>

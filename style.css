@@ -1,0 +1,100 @@
+/* Sidebar */
+#sidebar {
+    width: 200px;
+    background: #dcdcdc;
+    padding: 15px;
+    position: fixed;
+    height: 100vh;
+}
+
+#helpButton {
+    width: 100%;
+    background: purple;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#tutorial {
+    display: none;
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Content */
+#content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+#tabs {
+    display: flex;
+    gap: 5px;
+}
+
+.tab {
+    padding: 5px 10px;
+    background: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: purple;
+    color: white;
+}
+
+/* Notes */
+#noteInput {
+    width: 100%;
+    height: 200px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.note-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Resize Handles */
+.resize-handle {
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.resize-left { left: -15px; top: 50%; transform: translateY(-50%); }
+.resize-right { right: -15px; top: 50%; transform: translateY(-50%); }
+.resize-top { top: -15px; left: 50%; transform: translateX(-50%); }
+.resize-bottom { bottom: -15px; left: 50%; transform: translateX(-50%); }
+
+/* Delete Button */
+.deleteImageButton {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.deleteImageButton:hover {
+    background-color: #4500b5;
+}
